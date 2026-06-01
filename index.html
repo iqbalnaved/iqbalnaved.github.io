@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mohammad Iqbal Nouyed, PhD</title>
+<meta name="description" content="Postdoctoral Research Fellow at West Virginia University. Clinical AI evaluation and safety.">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500&display=swap');
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #0f0f0f;
+    --bg2: #161616;
+    --border: #2a2a2a;
+    --text: #e8e8e8;
+    --muted: #888;
+    --accent: #c8b8a2;
+    --link: #9fb8d4;
+    --mono: 'IBM Plex Mono', monospace;
+    --sans: 'IBM Plex Sans', sans-serif;
+  }
+
+  html { background: var(--bg); color: var(--text); font-family: var(--sans); font-size: 16px; line-height: 1.7; }
+
+  body { max-width: 680px; margin: 0 auto; padding: 4rem 1.5rem 6rem; }
+
+  a { color: var(--link); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  hr { border: none; border-top: 1px solid var(--border); margin: 2.5rem 0; }
+
+  /* Header */
+  .header { display: flex; gap: 2rem; align-items: flex-start; margin-bottom: 2.5rem; }
+  .header img { width: 96px; height: 96px; border-radius: 50%; object-fit: cover; filter: grayscale(20%); flex-shrink: 0; border: 1px solid var(--border); }
+  .header-text h1 { font-size: 1.4rem; font-weight: 500; letter-spacing: -0.01em; color: var(--text); margin-bottom: 0.2rem; }
+  .header-text .role { font-size: 0.9rem; color: var(--muted); margin-bottom: 0.75rem; }
+  .links { display: flex; flex-wrap: wrap; gap: 0.5rem 1rem; font-size: 0.85rem; font-family: var(--mono); }
+  .links a { color: var(--accent); }
+
+  /* Section headings */
+  h2 { font-size: 0.75rem; font-family: var(--mono); font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin-bottom: 1.25rem; }
+
+  /* Bio */
+  .bio { font-size: 0.95rem; color: var(--text); margin-bottom: 0; }
+  .bio p + p { margin-top: 0.75rem; }
+
+  /* News */
+  .news-item { display: flex; gap: 1.5rem; padding: 0.5rem 0; font-size: 0.9rem; border-bottom: 1px solid var(--border); }
+  .news-item:last-child { border-bottom: none; }
+  .news-date { font-family: var(--mono); font-size: 0.78rem; color: var(--muted); white-space: nowrap; min-width: 70px; padding-top: 0.15rem; }
+  .news-text { color: var(--text); }
+  .news-text a { color: var(--link); }
+  .tag { font-family: var(--mono); font-size: 0.7rem; background: var(--bg2); border: 1px solid var(--border); color: var(--muted); padding: 1px 6px; border-radius: 3px; margin-left: 6px; vertical-align: middle; white-space: nowrap; }
+
+  /* Publications */
+  .pub { padding: 0.75rem 0; border-bottom: 1px solid var(--border); font-size: 0.9rem; }
+  .pub:last-child { border-bottom: none; }
+  .pub-title { color: var(--text); font-weight: 400; margin-bottom: 0.2rem; }
+  .pub-title a { color: var(--text); }
+  .pub-title a:hover { color: var(--link); text-decoration: none; }
+  .pub-meta { font-size: 0.82rem; color: var(--muted); font-family: var(--mono); }
+  .pub-status { font-size: 0.75rem; font-family: var(--mono); color: var(--accent); margin-left: 0.5rem; }
+
+  /* Portfolio */
+  .project { padding: 0.75rem 0; border-bottom: 1px solid var(--border); font-size: 0.9rem; }
+  .project:last-child { border-bottom: none; }
+  .project-title { font-family: var(--mono); font-size: 0.85rem; color: var(--link); margin-bottom: 0.2rem; }
+  .project-desc { color: var(--muted); font-size: 0.85rem; }
+
+  /* Talks */
+  .talk { padding: 0.5rem 0; border-bottom: 1px solid var(--border); font-size: 0.9rem; display: flex; gap: 1.5rem; }
+  .talk:last-child { border-bottom: none; }
+  .talk-date { font-family: var(--mono); font-size: 0.78rem; color: var(--muted); white-space: nowrap; min-width: 70px; padding-top: 0.15rem; }
+  .talk-body { color: var(--text); }
+  .talk-venue { font-size: 0.82rem; color: var(--muted); font-family: var(--mono); }
+
+  /* Contact */
+  .contact { font-size: 0.9rem; color: var(--muted); }
+  .contact a { color: var(--accent); }
+
+  @media (max-width: 500px) {
+    .header { flex-direction: column; gap: 1rem; }
+    .news-item, .talk { flex-direction: column; gap: 0.25rem; }
+    .news-date, .talk-date { min-width: unset; }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <img src="images/profile.jpg" alt="Mohammad Iqbal Nouyed">
+  <div class="header-text">
+    <h1>Mohammad Iqbal Nouyed, PhD</h1>
+    <div class="role">Postdoctoral Research Fellow &amp; Lecturer · West Virginia University</div>
+    <div class="links">
+      <a href="https://scholar.google.com/citations?user=LGOwfeAAAAAJ&hl=en">Scholar</a>
+      <a href="https://github.com/iqbalnaved">GitHub</a>
+      <a href="https://linkedin.com/in/iqbalnouyed">LinkedIn</a>
+      <a href="https://orcid.org/0000-0001-5314-6706">ORCID</a>
+      <a href="files/cv.pdf">CV</a>
+      <a href="mailto:iqbalnaved@gmail.com">Email</a>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<h2>About</h2>
+<div class="bio">
+  <p>I am a Postdoctoral Research Fellow at the Department of Microbiology, Immunology and Cell Biology, WVU School of Medicine (PI: <a href="mailto:michael.hu@hsc.wvu.edu">Dr. Gangqing Hu</a>). My research centers on the <strong>measurement and evaluation of large language models and multimodal foundation models in clinical AI</strong> — identifying systematic failure modes that matter for patient safety.</p>
+  <p>Active research threads: sycophancy in chatbot clinical consultations, prompt framing bias in dermoscopy, text-dominant reasoning failures in multimodal models, and foundation model benchmarking for diabetic retinopathy grading. Clinical domains: dermatology, psychiatry, and ophthalmology.</p>
+</div>
+
+<hr>
+
+<h2>News</h2>
+
+<div class="news-item">
+  <div class="news-date">May 2026</div>
+  <div class="news-text">Paper published in <em>Diagnostics</em>: "Comparative Analysis of General-Purpose vs. Domain-Specific Multimodal Models for Diabetic Retinopathy Classification." <a href="https://doi.org/10.3390/diagnostics16101504">doi</a><span class="tag">journal</span></div>
+</div>
+<div class="news-item">
+  <div class="news-date">Apr 2026</div>
+  <div class="news-text">Co-authored paper in <em>npj Digital Medicine</em> (IF 15.1): AI-generated psychiatric vignette evaluation. <a href="https://doi.org/10.1038/s41746-026-02605-6">doi</a><span class="tag">journal</span></div>
+</div>
+<div class="news-item">
+  <div class="news-date">Apr 2026</div>
+  <div class="news-text">Comment accepted in <em>JAAD</em>: evolving GPT performance in dermoscopic diagnosis. <a href="https://doi.org/10.1016/j.jaad.2025.09.119">doi</a><span class="tag">journal</span></div>
+</div>
+<div class="news-item">
+  <div class="news-date">Nov 2025</div>
+  <div class="news-text">Oral presentation at <strong>AAAI SECURE4H</strong>, Arlington VA: "Sensing Without Alerting."<span class="tag">talk</span></div>
+</div>
+<div class="news-item">
+  <div class="news-date">Aug 2025</div>
+  <div class="news-text">Paper at <strong>IEEE IGARSS 2025</strong>: patch-based tiny object classification for aerial images. <a href="https://doi.org/10.1109/igarss55030.2025.11243929">doi</a><span class="tag">conference</span></div>
+</div>
+
+<hr>
+
+<h2>Selected Publications</h2>
+
+<div class="pub">
+  <div class="pub-title">The cost of AI sycophancy in dermoscopic diagnosis <span class="pub-status">accepted</span></div>
+  <div class="pub-meta">M. I. Nouyed, D. A. Adjeroh, D. Xu, M. S. Kolodney, G. Hu · JAAD</div>
+</div>
+<div class="pub">
+  <div class="pub-title">Sensing but Not Alerting: The Cost of Sycophancy in ChatGPT Psychodermatology Consultations <span class="pub-status">under review</span></div>
+  <div class="pub-meta">M. I. Nouyed et al. · JAAD International</div>
+</div>
+<div class="pub">
+  <div class="pub-title">Text-Dominant Decision-Making by Large Multimodal Models in Dermatology Clinical Challenges <span class="pub-status">accepted</span></div>
+  <div class="pub-meta">M. I. Nouyed, L. E. Keplinger, H. Akhter et al. · JAAD</div>
+</div>
+<div class="pub">
+  <div class="pub-title"><a href="https://doi.org/10.3390/diagnostics16101504">Comparative Analysis of General-Purpose vs. Domain-Specific Multimodal Models for Diabetic Retinopathy Classification</a></div>
+  <div class="pub-meta">M. I. Nouyed, M. Al-Mamun, D. A. Adjeroh, G. Hu · Diagnostics, 2026</div>
+</div>
+<div class="pub">
+  <div class="pub-title"><a href="https://doi.org/10.1038/s41746-026-02605-6">Evaluation of AI-generated vignettes depicting patient chatbot use in psychiatric contexts</a></div>
+  <div class="pub-meta">W. Zheng, D. N. Chandran, D. E. Elswick, M. I. Nouyed, G. Hu · npj Digital Medicine, 2026</div>
+</div>
+
+<p style="margin-top:1rem; font-size:0.85rem; font-family: var(--mono); color: var(--muted);">Full list → <a href="https://scholar.google.com/citations?user=LGOwfeAAAAAJ&hl=en">Google Scholar</a></p>
+
+<hr>
+
+<h2>Talks</h2>
+
+<div class="talk">
+  <div class="talk-date">Nov 2025</div>
+  <div class="talk-body">
+    Sensing Without Alerting: The People-Pleaser Cost of General-Purpose Chatbots in Dermatology Patients with Psychiatric Comorbidity
+    <div class="talk-venue">AAAI SECURE4H Fall Symposium · Oral · Arlington, VA</div>
+  </div>
+</div>
+<div class="talk">
+  <div class="talk-date">Jul 2025</div>
+  <div class="talk-body">
+    Using Multimodal LLMs for Studying Scientific Articles
+    <div class="talk-venue">WVU Summer Workshop on AI, Digital Health &amp; BioML · Oral · Morgantown, WV</div>
+  </div>
+</div>
+<div class="talk">
+  <div class="talk-date">Aug 2025</div>
+  <div class="talk-body">
+    Patch-Based Tiny Object Classification for High Resolution Aerial Images
+    <div class="talk-venue">IEEE IGARSS 2025 · Poster · Honolulu, HI</div>
+  </div>
+</div>
+<div class="talk">
+  <div class="talk-date">Jul 2024</div>
+  <div class="talk-body">
+    Efficient Analysis of Gigapixel Histopathological Images
+    <div class="talk-venue">WVU Summer Workshop on AI &amp; Digital Health · Oral · Morgantown, WV</div>
+  </div>
+</div>
+<div class="talk">
+  <div class="talk-date">Dec 2022</div>
+  <div class="talk-body">
+    Efficient Classification of Very High Resolution Histopathological Images
+    <div class="talk-venue">IEEE BIBM 2022 · Oral · Las Vegas, NV</div>
+  </div>
+</div>
+
+<hr>
+
+<h2>Projects</h2>
+
+<div class="project">
+  <div class="project-title"><a href="https://github.com/iqbalnaved/sensing-not-alerting">sensing-not-alerting</a></div>
+  <div class="project-desc">Multi-agent simulation framework evaluating sycophancy and psychiatric safety failures in ChatGPT psychodermatology consultations.</div>
+</div>
+<div class="project">
+  <div class="project-title"><a href="https://github.com/iqbalnaved/text-dominant-multimodal-dermatology-eval">text-dominant-multimodal-dermatology-eval</a></div>
+  <div class="project-desc">Evaluation of text-dominant reasoning failures in large multimodal models for clinical dermatology tasks.</div>
+</div>
+<div class="project">
+  <div class="project-title"><a href="https://github.com/iqbalnaved/prompt-framing-bias-dermoscopy">prompt-framing-bias-dermoscopy</a></div>
+  <div class="project-desc">Large-scale experiments on prompt framing effects on LLM melanoma classification across GPT-5, Gemini, and MedGemma.</div>
+</div>
+<div class="project">
+  <div class="project-title"><a href="https://github.com/iqbalnaved/dr-classification-study">dr-classification-study</a></div>
+  <div class="project-desc">Benchmarking general-purpose vs. domain-specific foundation models for diabetic retinopathy grading across zero-shot, few-shot, and fine-tuning paradigms.</div>
+</div>
+<div class="project">
+  <div class="project-title"><a href="https://github.com/iqbalnaved/wsi_classfication">wsi_classfication</a></div>
+  <div class="project-desc">Discriminative patch selection and ensemble decision fusion for gigapixel whole-slide image classification.</div>
+</div>
+
+<hr>
+
+<h2>Teaching</h2>
+
+<div class="talk">
+  <div class="talk-date">Sp 2025</div>
+  <div class="talk-body">
+    EE465: Digital Image Processing — sole instructor, undergraduate level
+    <div class="talk-venue">Lane Dept. of CSEE · West Virginia University</div>
+  </div>
+</div>
+<div class="talk">
+  <div class="talk-date">Fa 2024</div>
+  <div class="talk-body">
+    Undergraduate research mentoring — cellular image preprocessing pipelines
+    <div class="talk-venue">Social Media and Data Analytics Lab · WVU</div>
+  </div>
+</div>
+
+<hr>
+
+<div class="contact">
+  iqbalnaved@gmail.com &nbsp;·&nbsp;
+  Dept. of Microbiology, Immunology and Cell Biology, WVU School of Medicine &nbsp;·&nbsp;
+  Morgantown, WV
+</div>
+
+</body>
+</html>
