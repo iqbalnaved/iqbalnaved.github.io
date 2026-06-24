@@ -31,28 +31,24 @@
 
   hr { border: none; border-top: 1px solid var(--border); margin: 2.5rem 0; }
 
-  /* Header */
   .header { display: flex; gap: 2rem; align-items: flex-start; margin-bottom: 2.5rem; }
   .header img {
   width: 160px;
   height: 160px;
   border-radius: 50%;
   object-fit: cover;
-  object-position: center top; /* adjust: center, top, 50% 20%, etc. */
+  object-position: center top;
   }
   .header-text h1 { font-size: 1.4rem; font-weight: 500; letter-spacing: -0.01em; color: var(--text); margin-bottom: 0.2rem; }
   .header-text .role { font-size: 0.9rem; color: var(--muted); margin-bottom: 0.75rem; }
   .links { display: flex; flex-wrap: wrap; gap: 0.5rem 1rem; font-size: 0.85rem; font-family: var(--mono); }
   .links a { color: var(--accent); }
 
-  /* Section headings */
   h2 { font-size: 0.75rem; font-family: var(--mono); font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin-bottom: 1.25rem; }
 
-  /* Bio */
   .bio { font-size: 0.95rem; color: var(--text); margin-bottom: 0; }
   .bio p + p { margin-top: 0.75rem; }
 
-  /* News */
   .news-item { display: flex; gap: 1.5rem; padding: 0.5rem 0; font-size: 0.9rem; border-bottom: 1px solid var(--border); }
   .news-item:last-child { border-bottom: none; }
   .news-date { font-family: var(--mono); font-size: 0.78rem; color: var(--muted); white-space: nowrap; min-width: 70px; padding-top: 0.15rem; }
@@ -60,7 +56,6 @@
   .news-text a { color: var(--link); }
   .tag { font-family: var(--mono); font-size: 0.7rem; background: var(--bg2); border: 1px solid var(--border); color: var(--muted); padding: 1px 6px; border-radius: 3px; margin-left: 6px; vertical-align: middle; white-space: nowrap; }
 
-  /* Publications */
   .pub { padding: 0.75rem 0; border-bottom: 1px solid var(--border); font-size: 0.9rem; }
   .pub:last-child { border-bottom: none; }
   .pub-title { color: var(--text); font-weight: 400; margin-bottom: 0.2rem; }
@@ -69,20 +64,17 @@
   .pub-meta { font-size: 0.82rem; color: var(--muted); font-family: var(--mono); }
   .pub-status { font-size: 0.75rem; font-family: var(--mono); color: var(--accent); margin-left: 0.5rem; }
 
-  /* Portfolio */
   .project { padding: 0.75rem 0; border-bottom: 1px solid var(--border); font-size: 0.9rem; }
   .project:last-child { border-bottom: none; }
   .project-title { font-family: var(--mono); font-size: 0.85rem; color: var(--link); margin-bottom: 0.2rem; }
   .project-desc { color: var(--muted); font-size: 0.85rem; }
 
-  /* Talks */
   .talk { padding: 0.5rem 0; border-bottom: 1px solid var(--border); font-size: 0.9rem; display: flex; gap: 1.5rem; }
   .talk:last-child { border-bottom: none; }
   .talk-date { font-family: var(--mono); font-size: 0.78rem; color: var(--muted); white-space: nowrap; min-width: 70px; padding-top: 0.15rem; }
   .talk-body { color: var(--text); }
   .talk-venue { font-size: 0.82rem; color: var(--muted); font-family: var(--mono); }
 
-  /* Contact */
   .contact { font-size: 0.9rem; color: var(--muted); }
   .contact a { color: var(--accent); }
 
@@ -124,6 +116,18 @@
 <h2>News</h2>
 
 <div class="news-item">
+  <div class="news-date">Jun 2026</div>
+  <div class="news-text">Paper published in <em>JAAD</em>: "Text-Dominant Decision-Making by Large Multimodal Models in Dermatology Clinical Challenges." <a href="https://doi.org/10.1016/j.jaad.2026.05.129">doi</a><span class="tag">journal</span></div>
+</div>
+<div class="news-item">
+  <div class="news-date">Jun 2026</div>
+  <div class="news-text">Paper accepted in <em>JAAD International</em>: "Sensing but Not Alerting: ChatGPT Mental Health Triage Gaps in Simulated Psychodermatology Conversations."<span class="tag">journal</span></div>
+</div>
+<div class="news-item">
+  <div class="news-date">May 2026</div>
+  <div class="news-text">Paper accepted in <em>JAAD</em>: "The Cost of AI Sycophancy in Dermoscopic Diagnosis."<span class="tag">journal</span></div>
+</div>
+<div class="news-item">
   <div class="news-date">May 2026</div>
   <div class="news-text">Paper published in <em>Diagnostics</em>: "Comparative Analysis of General-Purpose vs. Domain-Specific Multimodal Models for Diabetic Retinopathy Classification." <a href="https://doi.org/10.3390/diagnostics16101504">doi</a><span class="tag">journal</span></div>
 </div>
@@ -149,16 +153,16 @@
 <h2>Selected Publications</h2>
 
 <div class="pub">
-  <div class="pub-title">The cost of AI sycophancy in dermoscopic diagnosis <span class="pub-status">accepted</span></div>
+  <div class="pub-title"><a href="https://doi.org/10.1016/j.jaad.2026.05.129">Text-Dominant Decision-Making by Large Multimodal Models in Dermatology Clinical Challenges</a></div>
+  <div class="pub-meta">M. I. Nouyed, L. E. Keplinger, H. Akhter et al. · JAAD, 2026</div>
+</div>
+<div class="pub">
+  <div class="pub-title">The Cost of AI Sycophancy in Dermoscopic Diagnosis <span class="pub-status">accepted</span></div>
   <div class="pub-meta">M. I. Nouyed, D. A. Adjeroh, D. Xu, M. S. Kolodney, G. Hu · JAAD</div>
 </div>
 <div class="pub">
-  <div class="pub-title">Sensing but Not Alerting: The Cost of Sycophancy in ChatGPT Psychodermatology Consultations <span class="pub-status">under review</span></div>
+  <div class="pub-title">Sensing but Not Alerting: ChatGPT Mental Health Triage Gaps in Simulated Psychodermatology Conversations <span class="pub-status">accepted</span></div>
   <div class="pub-meta">M. I. Nouyed et al. · JAAD International</div>
-</div>
-<div class="pub">
-  <div class="pub-title">Text-Dominant Decision-Making by Large Multimodal Models in Dermatology Clinical Challenges <span class="pub-status">accepted</span></div>
-  <div class="pub-meta">M. I. Nouyed, L. E. Keplinger, H. Akhter et al. · JAAD</div>
 </div>
 <div class="pub">
   <div class="pub-title"><a href="https://doi.org/10.3390/diagnostics16101504">Comparative Analysis of General-Purpose vs. Domain-Specific Multimodal Models for Diabetic Retinopathy Classification</a></div>
@@ -183,17 +187,17 @@
   </div>
 </div>
 <div class="talk">
-  <div class="talk-date">Jul 2025</div>
-  <div class="talk-body">
-    Using Multimodal LLMs for Studying Scientific Articles
-    <div class="talk-venue">WVU Summer Workshop on AI, Digital Health &amp; BioML · Oral · Morgantown, WV</div>
-  </div>
-</div>
-<div class="talk">
   <div class="talk-date">Aug 2025</div>
   <div class="talk-body">
     Patch-Based Tiny Object Classification for High Resolution Aerial Images
     <div class="talk-venue">IEEE IGARSS 2025 · Poster · Honolulu, HI</div>
+  </div>
+</div>
+<div class="talk">
+  <div class="talk-date">Jul 2025</div>
+  <div class="talk-body">
+    Using Multimodal LLMs for Studying Scientific Articles
+    <div class="talk-venue">WVU Summer Workshop on AI, Digital Health &amp; BioML · Oral · Morgantown, WV</div>
   </div>
 </div>
 <div class="talk">
